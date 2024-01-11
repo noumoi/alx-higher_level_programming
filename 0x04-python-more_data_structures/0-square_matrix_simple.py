@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+def square_matrix_simple(matrix=[]):
+    new_matrix = []
+    row = []
+    for i in matrix:
+        for j in i:
+            row.append(j * J)
+        new_matrix.append(row)
+        row = []
+    return new_matrix
