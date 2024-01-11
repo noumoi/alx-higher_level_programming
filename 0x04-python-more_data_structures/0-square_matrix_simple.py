@@ -1,10 +1,6 @@
-#!/usr/bin/bash
 def square_matrix_simple(matrix=[]):
-    new_matrix = []
-    row = []
-    for i in matrix:
-        for j in i:
-            row.append(j * j)
-        new_matrix.append(row)
-        row = []
-    return new_matrix
+    squared_matrix = [list(row) for row in matrix]
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            squared_matrix[i][j] = matrix[i][j] ** 2
+    return squared_matrix
